@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
@@ -7,6 +7,7 @@
   </head>
 
   <body>
+    <!-- навигация по сайту -->
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -19,53 +20,57 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
+        <!-- кнопка вход, (вылазит окно входа) -->
         <ul class="user-navigation">
           <li class="login-link">Вход</li>
         </ul>
       </nav>
     </header>
-
+    <!-- основное содержание сайта -->
     <main class="container">
-
       <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
-
+      <!-- блок с преимуществами (быстро, круто, дорого) -->
       <section class="feautures">
         <h2 class="visually-hidden">Преимущества</h2>
-
         <ul class="feautures-list">
           <li class="feautures-item">
             <h3>Быстро</h3>
-            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+            <p>
+              Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
+            </p>
           </li>
-
-
           <li class="feautures-item">
             <h3>Круто</h3>
             <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино!</p>
           </li>
-
           <li class="feautures-item">
             <h3>Дорого</h3>
-            <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
+            <p>
+              Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
+            </p>
           </li>
         </ul>
       </section>
-
+      <!-- новости -->
       <section class="news">
         <h2>Новости</h2>
         <ul class="news-list">
           <li class="news-item">
-            <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+            <p>
+              Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+            </p>
             <time datetime="2016-01-11">11 января</time>
           </li>
           <li class="news-item">
-            <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
+            <p>
+              В нашей команде пополнение, Борис «Бритва» Стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды
+            </p>
             <time datetime="2016-01-18">18 января</time>
           </li>
         </ul>
         <a class="button" href="news.html">Все новости</a>
       </section>
-
+      <!-- галерея -->
       <section class="gallery">
         <h2>Фотогалерея</h2>
         <figure>
@@ -76,7 +81,7 @@
         <span class="button gallery-button gallery-button-back">Назад</span>
         <span class="button gallery-button gallery-button-next">Вперед</span>
       </section>
-
+      <!-- контактная информация -->
       <section class="contacts">
         <h2>Контактная информация</h2>
         <p>
@@ -92,7 +97,7 @@
         <a class="button" href="map.html">Как проехать</a>
         <a class="button" href="contacts.html">Обратная связь</a>
         </section>
-
+        <!-- записаться -->
         <section class="appointment">
           <h2>Записаться</h2>
           <p class="apointment-info">
@@ -101,38 +106,38 @@
           <!-- Здесь будет форма -->
         </section>
       </main>
-
+      <!-- подвал -->
       <footer class="main-footer">
-          <p class="footer-contacts">
-            Барбершоп «Бородинский»<br>
-            Адрес: г. Санкт-петербург, ул. Б. конюшенная, д. 19/8<br>
-            <a href="map.html">как нас найти?</a><br>
-            Телефон: +7 (495) 666-02-66
-          </p>
+        <p class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-петербург, ул. Б. конюшенная, д. 19/8<br>
+          <a href="map.html">как нас найти?</a><br>
+          Телефон: +7 (495) 666-02-66
+        </p>
+        <!-- иконки социальных кнопок -->
+        <div class="footer-social">
+          <b>Давайте дружить</b>
+          <a class="social-button" href="#">Вконтакте</a>
+          <a class="social-button" href="#">Фэйсбук</a>
+          <a class="social-button" href="#">Инстаграм</a>
+        </div>
 
-          <div class="footer-social">
-            <b>Давайте дружить</b>
-            <a class="social-button" href="#">Вконтакте</a>
-            <a class="social-button" href="#">Фэйсбук</a>
-            <a class="social-button" href="#">Инстаграм</a>
-          </div>
-
-          <p class="footer-copyright">
-            <b>Разработано:</b>
-            <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
-          </p>
+        <p class="footer-copyright">
+          <b>Разработано:</b>
+          <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
+        </p>
       </footer>
-
+        <!-- всплывающее окно входа -->
         <section class="modal modal-login">
           <h2>Личный кабинет</h2>
           <p>Введите свой логин и пароль</p>
           <!-- Здесь будет форма -->
           <span class="modal-close">x</span>
         </section>
-
-          <section class="modal modal-map">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <span class="modal-close">x</span>
-          </section>
+        <!-- всплывающая карта -->
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <span class="modal-close">x</span>
+        </section>
   </body>
 </html>

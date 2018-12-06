@@ -1,1 +1,10 @@
 /* стили для Barbershop */
+ul {
+  margin: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  float: left;
+}
