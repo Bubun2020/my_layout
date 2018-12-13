@@ -20,7 +20,9 @@
         </ul>
         <!-- кнопка вход, (вылазит окно входа) -->
         <ul class="user-navigation">
-          <li class="login-link">Вход</li>
+          <li class="login-link">
+            <a class="login-link" href="link.html">Вход</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -33,10 +35,70 @@
         <li><a href="catalog.html">Магазин</a></li>
         <li class="breadcrumbs-current">Средства для ухода</li>
       </ul>
-      <!-- блок с фильтрами товаров -->
+      <!-- блок с формами фильтров товаров -->
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- здесь будет форма (пример в 4-м видео "доступность>формы") -->
+        <!-- первая часть формы -->
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <!-- первый пункт -->
+              <li>
+                <input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" value="" checked>
+                <label for="filter-baxter-of-california">Baxter of California</label>
+              </li>
+              <!-- 2й пункт -->
+              <li>
+                <input type="checkbox" name="mr-natty" id="filter-mr-natty" value="">
+                <label for="filter-mr-natty">Mr Natty</label>
+              </li>
+              <!-- 3й пункт -->
+              <li>
+                <input type="checkbox" name="suavecito" id="filter-suavecito" value="" checked>
+                <label for="filter-suavecito">Suavecito</label>
+              </li>
+              <!-- 4й пункт -->
+              <li>
+                <input type="checkbox" name="malin+goetz" id="filter-malin+goetz" value="">
+                <label for="filter-malin+goetz">Malin+Goetz</label>
+              </li>
+              <!-- 5й пункт -->
+              <li>
+                <input type="checkbox" name="murray’s" id="filter-murray’s" value="">
+                <label for="filter-murray’s">Murray’s</label>
+              </li>
+              <!-- 6й пункт -->
+              <li>
+                <input type="checkbox" name="american-crew" id="filter-american-crew" value="" checked>
+                <label for="filter-american-crew">American Crew</label>
+              </li>
+            </ul>
+          </fieldset>
+          <!-- вторая часть формы -->
+          <fieldset>
+            <legend>Группы товаров:</legend>
+            <ul>
+              <!-- первый пункт -->
+              <li>
+                <input type="radio" name="product-group" value="shaving" id="filter-shave">
+                <label for="filter-shave">Бритвенные принадлежности</label>
+              </li>
+              <!-- 2й пункт -->
+              <li>
+                <input type="radio" name="product-group" value="hair-care" id="filter-care" checked>
+                <label for="filter-care">Средства для ухода</label>
+              </li>
+              <!-- 3й пункт -->
+              <li>
+                <input type="radio" name="product-group" value="accessories" id="filter-accessories">
+                <label for="filter-accessories">Аксессуары</label>                
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" name="button-form-filter">Показать</button>
+        </form>
+
       </section>
       <!-- каталог товаров с фото -->
       <section class="catalog">
@@ -189,8 +251,26 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин" value="">
+        </p>
+        <p>
+          <label  class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль" value="">
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="visually-hidden" value="">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль</a>
+        </p>
+        <button class="button" type="submit" name="modal-login-button">Войти</button>
+      </form>
+      <button class="modal-close" type="button" name="modal-login-close">Закрыть</button>
     </section>
   </body>
 </html>
