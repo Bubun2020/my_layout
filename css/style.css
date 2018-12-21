@@ -16,6 +16,16 @@ body {
   background-repeat: no-repeat;
 }
 
+/* вторая страница catalog */
+.inner-page {
+  color: #000000;
+
+  background-color: #f9f6f3;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
 a {
   text-decoration: none;
 }
@@ -111,6 +121,42 @@ border: 7px solid #ffffff;
 
 .apointment-item input:focus {
   border-color: #663d15;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:focus,
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
 }
 
 .main-footer {
