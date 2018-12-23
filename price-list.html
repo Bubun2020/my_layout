@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Прайс лист</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+
+  <body class="inner-page">
     <!-- навигация по сайту -->
     <header class="main-header">
       <nav class="main-navigation">
@@ -36,15 +40,24 @@
       <section class="organization-info">
         <h2 class="visually-hidden">Описание преимуществ и цен</h2>
         <p class="big-call">Истинно мужская классика</p>
-        <h3 class="brand">Мы используем только лучшие средства:</h3>
-        <ul>
-          <li>Baxter of California</li>
-          <li>Mr Natty</li>
-          <li>Suavecito</li>
-          <li>Malin+Goetz</li>
-        </ul>
-        <h3 class="price-in-table">Цены на услуги наших мастеров:</h3>
-          <table>
+        <div class="brand">
+          <h3>
+            Мы используем только<br>
+            лучшие средства:
+          </h3>
+          <ul>
+            <li>Baxter of California</li>
+            <li>Mr Natty</li>
+            <li>Suavecito</li>
+            <li>Malin+Goetz</li>
+          </ul>
+        </div>
+        <div class="price-in-table">
+          <h3>
+            Цены на услуги<br>
+            наших мастеров:
+          </h3>
+          <table class="table-list">
             <tr>
               <td>Стрижка</td>
               <td>1 500 р</td>
@@ -58,10 +71,14 @@
               <td>350 р</td>
             </tr>
           </table>
-        <h3 class="about-ua">Несколько слов о нас:</h3>
-        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        </div>
+        <div class="about-ua">
+          <h3>Несколько слов о нас:</h3>
+          <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+          <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        </div>
       </section>
+
       <!-- подвал -->
       <footer class="main-footer">
         <p class="footer-contacts">
@@ -70,25 +87,46 @@
           <a href="map.html">как нас найти?</a><br>
           Телефон: +7 (495) 666-02-66
         </p>
+
         <!-- иконки социальных кнопок -->
         <div class="footer-social">
-          <b>Давайте дружить</b>
-          <a class="social-button" href="#">Вконтакте</a>
-          <a class="social-button" href="#">Фэйсбук</a>
-          <a class="social-button" href="#">Инстаграм</a>
+          <b>Давайте дружить!</b>
+            <ul>
+              <li><a class="social-button" href="#">Вконтакте</a></li>
+              <li><a class="social-button" href="#">Фэйсбук</a></li>
+              <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
         </div>
-
         <p class="footer-copyright">
           <b>Разработано:</b>
           <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
         </p>
       </footer>
+
       <!-- всплывающее окно входа -->
       <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль</p>
-        <!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин" value="">
+          </p>
+          <p>
+            <label  class="visually-hidden" for="user-password">Пароль</label>
+            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль" value="">
+          </p>
+          <p class="login-password-info">
+            <label class="login-checkbox">
+              <input type="checkbox" name="remember" class="visually-hidden" value="">
+              <span class="checkbox-indicator"></span>
+              Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль</a>
+          </p>
+          <button class="button" type="submit" name="modal-login-button">Войти</button>
+        </form>
+        <button class="modal-close" type="button" name="modal-login-close">Закрыть</button>
       </section>
     </main>
   </body>
